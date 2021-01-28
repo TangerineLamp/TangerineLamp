@@ -7,4 +7,12 @@
   justify-content: space-between;
   padding: 200rpx 0;
   box-sizing: border-box;
-} 
+}
+
+page{
+  /* 自定义颜色 */
+  --orange0:#ff9933;
+  --orange1:#ff8833;
+  --orange2:#ff7733;
+  --orange3:#ff6633;
+}

@@ -1,0 +1,4 @@
+<!--pages/paidTestDetail/paidTestDetail.wxml-->
+<view>pages/index1/paidTestDetail/paidTestDetail.wxml</view>
+<text>\n</text>
+<view class="tid">tid={{tid}}</view>

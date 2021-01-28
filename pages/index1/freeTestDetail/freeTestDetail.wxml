@@ -1,0 +1,4 @@
+<!--pages/freeTestDetail/freeTestDetail.wxml-->
+<view>pages/index1/freeTestDetail/freeTestDetail.wxml</view>
+<text>\n</text>
+<view class="tid">tid={{tid}}</view>

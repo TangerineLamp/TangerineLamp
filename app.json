@@ -1,12 +1,20 @@
 {
   "pages":[
     "pages/index0/index0",
-    "pages/index1/index1",
+    "pages/index1/index1/index1",
     "pages/index2/index2",
+<<<<<<< HEAD
     "pages/index3/index3", 
     "pages/login/login",
     "pages/adviceIndex/adviceiIndex",
     "pages/courseIndex/courseIndex" 
+=======
+    "pages/index3/index3",
+    "pages/index1/adviceIndex/adviceiIndex",
+    "pages/index1/courseIndex/courseIndex",
+    "pages/index1/paidTestDetail/paidTestDetail",
+    "pages/index1/freeTestDetail/freeTestDetail"
+>>>>>>> dev
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -26,7 +34,7 @@
       "selectedIconPath": "icons/planet_active.png"
       },
       {
-      "pagePath": "pages/index1/index1",
+      "pagePath": "pages/index1/index1/index1",
       "text": "心理专攻",
       "iconPath": "icons/heart.png",
       "selectedIconPath": "icons/heart_active.png"
