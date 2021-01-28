@@ -3,18 +3,14 @@
     "pages/index0/index0",
     "pages/index1/index1/index1",
     "pages/index2/index2",
-<<<<<<< HEAD
     "pages/index3/index3", 
     "pages/login/login",
     "pages/adviceIndex/adviceiIndex",
-    "pages/courseIndex/courseIndex" 
-=======
-    "pages/index3/index3",
+    "pages/courseIndex/courseIndex",
     "pages/index1/adviceIndex/adviceiIndex",
     "pages/index1/courseIndex/courseIndex",
     "pages/index1/paidTestDetail/paidTestDetail",
     "pages/index1/freeTestDetail/freeTestDetail"
->>>>>>> dev
   ],
   "window":{
     "backgroundTextStyle":"light",
