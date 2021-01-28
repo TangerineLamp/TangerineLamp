@@ -3,9 +3,10 @@
     "pages/index0/index0",
     "pages/index1/index1",
     "pages/index2/index2",
-    "pages/index3/index3",
+    "pages/index3/index3", 
+    "pages/login/login",
     "pages/adviceIndex/adviceiIndex",
-    "pages/courseIndex/courseIndex"
+    "pages/courseIndex/courseIndex" 
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -38,7 +39,7 @@
       },
       {
         "pagePath": "pages/index3/index3",
-        "text": "个人中心",
+        "text": "个人中心",   
         "iconPath": "icons/user.png",
         "selectedIconPath": "icons/user_active.png"
         }]
