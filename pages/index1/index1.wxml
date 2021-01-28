@@ -1,0 +1,52 @@
+<view class="topcontainer">
+  <view class="topleft">
+    <view>
+      <image src="/icons/advice.png" class="topimg" bindtap="bindViewTap1"></image>
+    </view>
+    <text style="color:#ff9933;font-size:30rpx" bindtap="bindViewTap1">心理咨询</text>
+  </view>
+  <view class="topright">
+    <view>
+      <image src="/icons/lesson.png" class="topimg" bindtap="bindViewTap2"></image>
+    </view>
+    <text style="color:#ff9933;font-size:30rpx" bindtap="bindViewTap2">心理课程</text>
+  </view>
+</view>
+<view class="bottom">
+  <!-- 左侧菜单 -->
+  <scroll-view scroll-y class="left_menu">
+    <view
+    class="menu_item {{index===currentIndex?'active':''}}"
+    wx:for="{{leftMenuList}}"
+    wx:key="*this"
+    bindtap="switchRightTab"
+    data-index="{{index}}">
+      {{item}}
+    </view>
+  </scroll-view>
+  <!-- 右侧心理测试列表 -->
+  <scroll-view scroll-y class="right_content">
+    <!-- 右侧渲染循环 -->
+    <view
+    class="test_item"
+    wx:for="{{rightTestList}}"
+    wx:for-index="index1"
+    wx:for-item="item1"
+    wx:key="id">
+      <view class="test_left">
+        <image src="{{item1.img}}" alt="/icons/heart.png"></image>
+        <view class="test_type">
+          {{item1.type}}
+        </view>
+      </view>
+      <view class="test_right">
+        <view class="test_title">
+          {{item1.title}}
+        </view>
+        <view class="test_des">
+          {{item1.des}}
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+</view>

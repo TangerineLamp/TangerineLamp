@@ -1,0 +1,48 @@
+{
+  "pages":[
+    "pages/index0/index0",
+    "pages/index1/index1",
+    "pages/index2/index2",
+    "pages/index3/index3",
+    "pages/adviceIndex/adviceiIndex",
+    "pages/courseIndex/courseIndex"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#ff9933",
+    "navigationBarTitleText": "小桔灯",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar": {
+    "borderStyle": "black",
+    "color": "#8a8a8a",
+    "selectedColor": "#ff9933",
+    "list": [
+      {
+      "pagePath": "pages/index0/index0",
+      "text": "每日分享",
+      "iconPath": "icons/planet.png",
+      "selectedIconPath": "icons/planet_active.png"
+      },
+      {
+      "pagePath": "pages/index1/index1",
+      "text": "心理专攻",
+      "iconPath": "icons/heart.png",
+      "selectedIconPath": "icons/heart_active.png"
+      },
+      {
+      "pagePath": "pages/index2/index2",
+      "text": "树洞广场",
+      "iconPath": "icons/comminity.png",
+      "selectedIconPath": "icons/comminity_active.png"
+      },
+      {
+        "pagePath": "pages/index3/index3",
+        "text": "个人中心",
+        "iconPath": "icons/user.png",
+        "selectedIconPath": "icons/user_active.png"
+        }]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
