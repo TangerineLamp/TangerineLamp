@@ -1,4 +1,4 @@
-// pages/index2/index2.js
+// pages/index2/treeHole/5/game.js
 Page({
 
   /**
@@ -62,15 +62,5 @@ Page({
    */
   onShareAppMessage: function () {
 
-  },
-
-  /**
-   * 跳转到对应分区
-   */
-  gotoTreehole: function(temp) {
-    //temp为数字，但是可以在后面的过程中变化为字符串，从而简化代码量
-    wx.navigateTo({
-      url: '/pages/index2/treeHole/?tid={{temp}}',
-    })
   }
 })

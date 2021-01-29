@@ -1,2 +1,36 @@
 <!--pages/index2/index2.wxml-->
-<text>pages/index2/index2.wxml</text>
+<view class='topcontainer in_mid'>
+  <text class='case_title in_mid'>树洞广场</text>
+</view>
+<view class='bottomcontainer in_mid'>
+  <view class='imgcontainer'>
+    <view class='imghalf in_mid'>
+      <button class="singleimg">
+        <image src="/pages/index2/logo/game.svg" class='stdimg' mode='aspectFill' bindtap='gotoTreehole'></image>
+        <text class="case_info">游戏</text>
+      </button>
+      <button class="singleimg">
+        <image src="/pages/index2/logo/study.svg" class='stdimg' mode='aspectFill'></image>
+        <text class="case_info">学习</text>
+      </button>
+      <button class="singleimg">
+        <image src="/pages/index2/logo/emotion.svg" class='stdimg' mode='aspectFill'></image>
+        <text class="case_info">情感</text>
+      </button> 
+    </view>
+    <view class='imghalf in_top'>
+      <button class="singleimg">
+        <image src="/pages/index2/logo/work.svg" class='stdimg' mode='aspectFill'></image>
+        <text class="case_info">工作</text>
+      </button>
+      <button class="singleimg">
+         <image src="/pages/index2/logo/life.svg" class='stdimg' mode='aspectFill'></image>
+         <text class="case_info">生活</text>
+      </button>
+      <button class="singleimg">
+        <image src="/pages/index2/logo/exam.svg" class='stdimg' mode='aspectFill'></image>
+        <text class="case_info">考研</text>
+      </button>
+    </view>
+  </view>
+</view>
