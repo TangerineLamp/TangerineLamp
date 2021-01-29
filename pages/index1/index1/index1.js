@@ -2,14 +2,13 @@ Page({
   data: {
     currentIndex:0,
     scrollTop:0,
-    leftMenuList:[],
+    leftMenuList:["专业测评","娱乐测评"],
     rightTestList:[],
   },
 
   //从云端获取的数据
   Cates:{
-    left:["专业测评","娱乐测评"],
-    right:[
+    testList:[
       [
         {
           tid:0,
@@ -79,21 +78,27 @@ Page({
     // 缓存技术
     if(!Cates){
       //不存在缓存，发送请求获取数据
+      wx.showLoading({
+        title: '加载中',
+      })
       this.getCates();
+      wx.hideLoading();
     }else{
+      wx.showLoading({
+        title: '加载中',
+      })
       //数据过期，时间5min
       if(Date.now()-Cates.time>1000*60*5){
         this.getCates();
       }else{
         //可以使用旧数据
         this.Cates = Cates.data;
-        let leftMenuList = this.Cates.left;
-        let rightTestList = this.Cates.right[0];
+        let rightTestList = this.Cates.testList[0];
         this.setData({
-          leftMenuList,
           rightTestList
         })
       }
+      wx.hideLoading();
     }
   },
 
@@ -106,21 +111,17 @@ Page({
     //     this.Cates=res.data.message;
     //     //把接口数据存入本地存储
     //     wx.setStorageSync("cates", {time:Date.now(),data:this.Cates});
-    //     //左右列表数据构造
-    //     let leftMenuList = this.Cates.left;
-    //     let rightTestList = this.Cates.right[0];
+    //     //右列表数据构造
+    //     let rightTestList = this.Cates.testList[0];
     //     this.setData({
-    //       leftMenuList,
     //       rightTestList
     //     })
     //   })
     
     //引入云开发后请删除以下全部↓↓↓↓↓
     wx.setStorageSync("cates", {time:Date.now(),data:this.Cates});
-    let left = this.Cates.left;
-    let right = this.Cates.right[0];
+    let right = this.Cates.testList[0];
     this.setData({
-      leftMenuList:left,
       rightTestList:right
     })
   },
@@ -142,15 +143,15 @@ Page({
   //左侧菜单点击事件,重新渲染右侧列表
   switchRightTab(e){
     const {index}=e.currentTarget.dataset;
-    let hhh = this.Cates.right[index];
+    let right = this.Cates.testList[index];
     this.setData({
       currentIndex:index,
-      rightTestList:hhh,
+      rightTestList:right,
       //重新设置，右侧内容的scroll-view标签距离顶部的距离
       scrollTop:0
     })
   },
-
+  //废弃↓↓↓
   getUrl() {
     if(currentIndex==0){
       return "/pages/paidTestDetail/paidTestDetail?tid="

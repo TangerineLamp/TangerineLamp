@@ -58,6 +58,12 @@
           "pathName": "pages/index1/index1/index1",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "测评详情",
+          "pathName": "pages/index1/paidTestDetail/paidTestDetail",
+          "query": "tid=0",
+          "scene": null
         }
       ]
     }

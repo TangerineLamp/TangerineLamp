@@ -35,7 +35,7 @@
     wx:key="id"
     url="{{currentIndex===0?('/pages/index1/paidTestDetail/paidTestDetail?tid='+item1.tid):'/pages/index1/freeTestDetail/freeTestDetail?tid='+item1.tid}}">
       <view class="test_left">
-        <image src="{{item1.img}}" alt="/icons/heart.png"></image>
+        <image src="{{item1.img}}" alt="/icons/none_img.png" mode="aspectFill"></image>
         <view class="test_type">
           {{item1.type}}
         </view>
