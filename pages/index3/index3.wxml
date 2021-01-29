@@ -40,23 +40,25 @@
                 <view class="his_name">足迹</view>
             </navigator>
         </view>
-        <view class="orders_title"></view>
+        <view class="orders_wrap">
+        
+        <view class="orders_title">我的</view>
         <view class="order_content">
         <navigator>
-          <view class="iconfont icon-ding_dan"></view>
+          <view class="order_icon iconfont icon-yuyue"></view>
           <view class="order_name">预约</view>
         </navigator>
         <navigator>
-          <view class="iconfont icon-fukuantongzhi"></view>
-          <view class="order_name">待付款</view>
+          <view class="iconfont icon-fukuan"></view>
+          <view class="order_name">订单</view>
         </navigator>
         <navigator>
-          <view class="iconfont icon-receipt-address"></view>
-          <view class="order_name">测评</view>
+          <view class="iconfont icon-xinliceping"></view>
+          <view class="order_name">心理测评</view>
         </navigator>
         <navigator>
-          <view class="iconfont icon-tuihuotuikuan_dianpu"></view>
-          <view class="order_name">退款/售后</view>
+          <view class="iconfont icon-shouhou"></view>
+          <view class="order_name">我的旅程</view>
         </navigator>
       </view>
     </view>
@@ -68,7 +70,7 @@
     <view class="app_info_wrap">
       <view class="app_info_item app_info_contact">
         <text>联系客服</text>
-        <text>400-618-4000</text>
+        <text>8888888888888</text>
       </view>
       <navigator url="/pages/feedback/index" class="app_info_item">意见反馈</navigator>
       <view class="app_info_item">关于我们</view>
@@ -77,4 +79,5 @@
     <view class="recommend_wrap">
       把应用推荐给其他人
     </view>
+</view>
 </view>
