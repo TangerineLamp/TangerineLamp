@@ -39,8 +39,9 @@ page {
   left: 50%;
   transform: translateX(-50%);
   top: 40%;
-  border: 1rpx solid greenyellow;
-  color: greenyellow;
+  background-color: orange;
+  border: 1rpx solid whitesmoke;
+  color: whitesmoke;
   font-size: 38rpx;
   padding: 30rpx;
   border-radius: 10rpx;
