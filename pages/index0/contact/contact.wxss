@@ -10,8 +10,10 @@
 }
 
 .title{
-  font-size: 46rpx;
+  font-size: 50rpx;
   font-weight: bold;
+  color: #ff9933;
+  margin-bottom: 20rpx;
 }
 
 .des{
