@@ -8,12 +8,16 @@
   border-bottom:1px #d5d5d5 solid;
 }
 .topleft{
-  width: 50%;
+  flex:1;
   text-align: center;
-  border-right:1rpx #ff9933 solid;
+}
+
+.topcenter{
+  flex:1;
+  text-align: center;
 }
 .topright{
-  width: 50%;
+  flex:1;
   text-align: center;
 }
 .icon{

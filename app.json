@@ -16,7 +16,9 @@
     "pages/index1/adviceIndex/adviceiIndex",
     "pages/index1/courseIndex/courseIndex",
     "pages/index1/paidTestDetail/paidTestDetail",
-    "pages/index1/freeTestDetail/freeTestDetail"
+    "pages/index1/freeTestDetail/freeTestDetail",
+    "pages/index1/wordsIndex/wordsIndex",
+    "pages/index1/wordsDetail/wordsDetail"
   ],
   "window":{
     "backgroundTextStyle":"light",

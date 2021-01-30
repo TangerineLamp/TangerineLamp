@@ -126,15 +126,20 @@ Page({
     })
   },
   
-
-  //导航至心理咨询
+  //导航至词条检索
   bindViewTap1() {
+    wx.navigateTo({
+      url: "/pages/index1/wordsIndex/wordsIndex"
+    })
+  },
+  //导航至心理咨询
+  bindViewTap2() {
     wx.navigateTo({
       url: "/pages/index1/adviceIndex/adviceiIndex"
     })
   },
   //导航至心理课程
-  bindViewTap2() {
+  bindViewTap3() {
     wx.navigateTo({
       url: "/pages/index1/courseIndex/courseIndex"
     })
@@ -151,11 +156,6 @@ Page({
       scrollTop:0
     })
   },
-  //废弃↓↓↓
-  getUrl() {
-    if(currentIndex==0){
-      return "/pages/paidTestDetail/paidTestDetail?tid="
-    }
-  }
+
 
 })  

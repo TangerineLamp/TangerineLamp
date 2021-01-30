@@ -66,9 +66,9 @@
           "scene": null
         },
         {
-          "name": "测评详情",
-          "pathName": "pages/index1/paidTestDetail/paidTestDetail",
-          "query": "tid=0",
+          "name": "词条检索编译模式",
+          "pathName": "pages/index1/wordsIndex/wordsIndex",
+          "query": "",
           "scene": null
         }
       ]
