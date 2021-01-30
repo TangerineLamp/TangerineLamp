@@ -5,7 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    PersonalEditor: "/pages/index2/editPage/personalEditor"
   },
 
   /**
@@ -62,5 +62,14 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+  
+    /**
+   * 跳转到树洞编辑页面
+   */
+  gotoPersonalEditor: function() {
+    wx.navigateTo({
+      url: this.data.PersonalEditor,
+    })
   }
 })

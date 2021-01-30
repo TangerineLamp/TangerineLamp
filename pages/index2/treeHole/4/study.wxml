@@ -1,2 +1,5 @@
 <!--pages/index2/treeHole/4/study.wxml-->
-<text>pages/index2/treeHole/4/study.wxml</text>
+<view class='topcontainer in_mid'>
+  <text class='case_title in_mid'>树洞广场 | 学习区</text>
+</view>
+<button class="circle" bindtap="gotoPersonalEditor">+</button>

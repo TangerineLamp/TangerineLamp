@@ -5,7 +5,14 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    TreeholeAddress: [
+      "/pages/index2/treeHole/1/work",
+      "/pages/index2/treeHole/2/life",
+      "/pages/index2/treeHole/3/emotion",
+      "/pages/index2/treeHole/4/study",
+      "/pages/index2/treeHole/5/game",
+      "/pages/index2/treeHole/6/exam"],
+    PersonalEditor: "/pages/index2/editPage/personalEditor"
   },
 
   /**
@@ -68,9 +75,39 @@ Page({
    * 跳转到对应分区
    */
   gotoTreehole: function(temp) {
-    //temp为数字，但是可以在后面的过程中变化为字符串，从而简化代码量
     wx.navigateTo({
-      url: '/pages/index2/treeHole/?tid={{temp}}',
+      url: this.data.TreeholeAddress[temp],
+    })
+  },
+
+  /**
+   * 前往1~6号树洞
+   */
+  gotoTreehole_1: function() {
+    this.gotoTreehole(0)
+  },
+  gotoTreehole_2: function() {
+    this.gotoTreehole(1)
+  },
+  gotoTreehole_3: function() {
+    this.gotoTreehole(2)
+  },
+  gotoTreehole_4: function() {
+    this.gotoTreehole(3)
+  },
+  gotoTreehole_5: function() {
+    this.gotoTreehole(4)
+  },
+  gotoTreehole_6: function() {
+    this.gotoTreehole(5)
+  },
+
+  /**
+   * 跳转到树洞编辑页面
+   */
+  gotoPersonalEditor: function() {
+    wx.navigateTo({
+      url: this.data.PersonalEditor,
     })
   }
 })

@@ -1,11 +1,11 @@
-// pages/index2/treeHole/3/emotion.js
+// pages/index2/editPage/personalEditor.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    PersonalEditor: "/pages/index2/editPage/personalEditor"
+
   },
 
   /**
@@ -62,14 +62,5 @@ Page({
    */
   onShareAppMessage: function () {
 
-  },
-  
-  /**
- * 跳转到树洞编辑页面
- */
-gotoPersonalEditor: function() {
-  wx.navigateTo({
-    url: this.data.PersonalEditor,
-  })
-}
+  }
 })

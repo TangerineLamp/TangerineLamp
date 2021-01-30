@@ -16,4 +16,10 @@ page{
   --orange1:#ff8833;
   --orange2:#ff7733;
   --orange3:#ff6633;
+  --treehole_work: #5C92F1;
+  --treehole_emotion: #F41010;
+  --treehole_game: #C26BE7;
+  --treehole_life: #F8AF76;
+  --treehole_study: #17AD17;
+  --treehole_exam: #E95BB8;
 }

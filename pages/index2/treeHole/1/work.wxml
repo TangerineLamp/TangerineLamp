@@ -1,2 +1,5 @@
 <!--pages/index2/treeHole/1/work.wxml-->
-<text>pages/index2/treeHole/1/work.wxml</text>
+<view class='topcontainer in_mid'>
+  <text class='case_title in_mid'>树洞广场 | 工作区</text>
+</view>
+<button class="circle" bindtap="gotoPersonalEditor">+</button>
