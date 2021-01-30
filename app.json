@@ -17,10 +17,8 @@
     "pages/index1/courseIndex/courseIndex",
     "pages/index1/paidTestDetail/paidTestDetail",
     "pages/index1/freeTestDetail/freeTestDetail",
-<<<<<<< Updated upstream
     "pages/index1/wordsIndex/wordsIndex",
-    "pages/index1/wordsDetail/wordsDetail"
-=======
+    "pages/index1/wordsDetail/wordsDetail",
     "pages/index3/advice/advice",
     "pages/index3/about/about",
     "pages/index3/share/share",
@@ -31,7 +29,6 @@
     "pages/index3/list/list",
     "pages/index3/exam/exam",
     "pages/index3/diary/diary"
->>>>>>> Stashed changes
   ],
   "window":{
     "backgroundTextStyle":"light",
