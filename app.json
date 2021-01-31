@@ -22,12 +22,13 @@
     "pages/index3/advice/advice",
     "pages/index3/about/about",
     "pages/index3/share/share",
-    "pages/index3/stars/stars",
+    "pages/index3/stars/stars", 
     "pages/index3/collection/collection",
     "pages/index3/treeroles/treeroles",
     "pages/index3/plan/plan",
     "pages/index3/list/list",
     "pages/index3/exam/exam",
+    "pages/index3/trace/trace",
     "pages/index3/diary/diary"
   ],
   "window":{

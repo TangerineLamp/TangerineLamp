@@ -1,2 +1,4 @@
 <!--pages/index3/diary/diary.wxml-->
-<text>pages/index3/diary/diary.wxml</text>
+<view class="button" hover-class="none" hover-stop-propagation="false">
+    个人日志
+</view>

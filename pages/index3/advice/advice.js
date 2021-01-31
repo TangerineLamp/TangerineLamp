@@ -3,64 +3,26 @@ Page({
 
   /**
    * 页面的初始数据
-   */
-  data: {
+   */data: {
+    items: ['异常闪退', '加载迟缓', '界面错位', '其他'],
+
+    shopitem: '默认排序' //默认显示的
 
   },
 
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
 
-  },
 
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
+  bindshop: function (event) {
+    var classify = event.currentTarget.dataset.classify;
 
-  },
+    var that = this;
 
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
+    console.log(classify) //输出的结果就是你点击的
 
-  },
+    this.setData({
+      shopitem: classify, //更新
 
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
+    })
 
   }
 })
