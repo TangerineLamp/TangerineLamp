@@ -19,7 +19,7 @@
   wx:key="id"
   wx:for-index="index0"
   wx:for-item="item0"
-  url="{{'/pages/index0/passage/passageContent/passageContent?pid='+item1.pid}}">
+  url="{{'/pages/index0/passage/passageContent/passageContent?pid='+item0.pid}}">
     <!-- 文章信息 title/des -->
     <view class="passage-info">
       <view class="passage-title">
