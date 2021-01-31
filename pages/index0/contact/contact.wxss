@@ -10,7 +10,7 @@
 }
 
 .title{
-  font-size: 50rpx;
+  font-size: 54rpx;
   font-weight: bold;
   color: #ff9933;
   margin-bottom: 20rpx;
