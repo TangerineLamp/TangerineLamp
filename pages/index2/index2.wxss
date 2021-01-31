@@ -78,13 +78,12 @@
 .circle{
   background-color: #ff9933;
   border: 0 solid #ffffff;
-  box-shadow: 4rpx 1rpx 1rpx #cccccc;
+  box-shadow: 6rpx 1rpx 1rpx #cccccc;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
   bottom: 1%;
   color: #fff;
-  font-size: 50rpx;
-  padding: 10rpx;
-  border-radius: 300rpx;
+  font-size: 60rpx;
+  border-radius: 50%;
 }

@@ -19,7 +19,7 @@ page{
   --treehole_work: #5C92F1;
   --treehole_emotion: #F41010;
   --treehole_game: #C26BE7;
-  --treehole_life: #F8AF76;
+  --treehole_life: #AAB20E;
   --treehole_study: #17AD17;
   --treehole_exam: #E95BB8;
 }

@@ -1,3 +1,7 @@
 {
-  "usingComponents": {}
+  "usingComponents": {},
+  "backgroundTextStyle": "light",
+  "navigationBarBackgroundColor": "#17AD17",
+  "navigationBarTitleText": "小桔灯",
+  "navigationBarTextStyle": "white"
 }

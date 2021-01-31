@@ -34,4 +34,6 @@
     </view>
   </view>
 </view>
-<button class="circle" bindtap="gotoPersonalEditor">+</button>
+<button class="circle in_mid" bindtap="gotoPersonalEditor" style="width:80rpx;height: 80rpx;padding:0;">
+  + <!--这个“+”是圆形按钮里面的内容-->
+</button>

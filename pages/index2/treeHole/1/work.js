@@ -5,7 +5,18 @@ Page({
    * 页面的初始数据
    */
   data: {
-    PersonalEditor: "/pages/index2/editPage/personalEditor"
+    PersonalEditor: "/pages/index2/editPage/personalEditor",
+    scrollindex: 0,
+    totalnum:  4,
+    starty: 0,  
+    startTime:  0,
+    endy: 0,
+    endTime:  0,
+    critical:  80,
+     maxTimeCritical: 300,
+     minTimeCritical: 100,
+    margintop:  0,
+     currentTarget: null,
   },
 
   /**
@@ -71,5 +82,31 @@ gotoPersonalEditor: function() {
   wx.navigateTo({
     url: this.data.PersonalEditor,
   })
+},
+
+
+scrollTouchStart: function (e) {
+  let py =  e.touches[0].pageY,
+    stamp =  e.timeStamp,
+     currentTarget = e.currentTarget.id;
+   console.log(py);
+   this.setData({
+    starty:  py,
+     startTime: stamp,
+     currentTarget: currentTarget
+  })
+},
+ scrollTouchMove(e) {
+  //  console.log(e);
+},
+ scrollTouchEnd: function (e) {
+  let py =  e.changedTouches[0].pageY,
+    stamp =  e.timeStamp,
+    d =  this.data,
+     timeStampdiffer = stamp - d.startTime;
+   this.setData({
+    endy:  py,
+    endTime:  stamp
+    })
 }
 })
