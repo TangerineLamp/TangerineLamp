@@ -19,6 +19,17 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
+    wx.showLoading({
+      title: '加载中',
+    })
+    this.getDetail();
+    wx.hideLoading();
+  },
+
+  /**
+   * 从云端获取数据
+   */  
+  getDetail() {
 
   },
 

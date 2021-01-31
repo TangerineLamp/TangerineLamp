@@ -39,7 +39,7 @@
     wx:for-index="index1"
     wx:for-item="item1"
     wx:key="id"
-    url="{{currentIndex===0?('/pages/index1/paidTestDetail/paidTestDetail?tid='+item1.tid):'/pages/index1/freeTestDetail/freeTestDetail?tid='+item1.tid}}">
+    url="{{currentIndex===0?('/pages/index1/test1/paidTestDetail/paidTestDetail?tid='+item1.tid):'/pages/index1/test1/freeTestDetail/freeTestDetail?tid='+item1.tid}}">
       <view class="test_left">
         <image src="{{item1.img}}" alt="/icons/none_img.png" mode="aspectFill"></image>
         <view class="test_type">
