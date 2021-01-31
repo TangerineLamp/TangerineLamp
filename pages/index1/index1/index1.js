@@ -74,32 +74,39 @@ Page({
 
   //首次加载页面时，调用onload
   onLoad: function(options){
-    const Cates = wx.getStorageSync("cates");
-    // 缓存技术
-    if(!Cates){
-      //不存在缓存，发送请求获取数据
-      wx.showLoading({
-        title: '加载中',
-      })
-      this.getCates();
-      wx.hideLoading();
-    }else{
-      wx.showLoading({
-        title: '加载中',
-      })
-      //数据过期，时间5min
-      if(Date.now()-Cates.time>1000*60*5){
-        this.getCates();
-      }else{
-        //可以使用旧数据
-        this.Cates = Cates.data;
-        let rightTestList = this.Cates.testList[0];
-        this.setData({
-          rightTestList
-        })
-      }
-      wx.hideLoading();
-    }
+    // const Cates = wx.getStorageSync("cates");
+    // // 缓存技术
+    // if(!Cates){
+    //   //不存在缓存，发送请求获取数据
+    //   wx.showLoading({
+    //     title: '加载中',
+    //   })
+    //   this.getCates();
+    //   wx.hideLoading();
+    // }else{
+    //   wx.showLoading({
+    //     title: '加载中',
+    //   })
+    //   //数据过期，时间1min
+    //   if(Date.now()-Cates.time>1000*60){
+    //     this.getCates();
+    //   }else{
+    //     //可以使用旧数据
+    //     this.Cates = Cates.data;
+    //     let rightTestList = this.Cates.testList[0];
+    //     this.setData({
+    //       rightTestList
+    //     })
+    //   }
+    //   wx.hideLoading();
+    // }
+
+    //无缓存版本，如需使用缓存则换为上面的版本
+    wx.showLoading({
+      title: '加载中',
+    })
+    this.getCates();
+    wx.hideLoading();
   },
 
   //接口返回的数据
@@ -109,7 +116,7 @@ Page({
     // })
     //   .then(res=>{
     //     this.Cates=res.data.message;
-    //     //把接口数据存入本地存储
+    //     //把接口数据存入本地存储,如不需要缓存则删除下一行
     //     wx.setStorageSync("cates", {time:Date.now(),data:this.Cates});
     //     //右列表数据构造
     //     let rightTestList = this.Cates.testList[0];
@@ -119,7 +126,7 @@ Page({
     //   })
     
     //引入云开发后请删除以下全部↓↓↓↓↓
-    wx.setStorageSync("cates", {time:Date.now(),data:this.Cates});
+    //wx.setStorageSync("cates", {time:Date.now(),data:this.Cates});
     let right = this.Cates.testList[0];
     this.setData({
       rightTestList:right
@@ -129,19 +136,24 @@ Page({
   //导航至词条检索
   bindViewTap1() {
     wx.navigateTo({
-      url: "/pages/index1/wordsIndex/wordsIndex"
+      url: "/pages/index1/words/wordsIndex/wordsIndex"
     })
   },
   //导航至心理咨询
   bindViewTap2() {
-    wx.navigateTo({
-      url: "/pages/index1/adviceIndex/adviceiIndex"
+    // wx.navigateTo({
+    //   url: "/pages/index1/advice/adviceIndex/adviceiIndex"
+    // })  
+    wx.showToast({
+      title: '敬请期待', //弹框内容
+      icon: 'success',  //弹框模式
+      duration: 1000    //弹框显示时间
     })
   },
   //导航至心理课程
   bindViewTap3() {
     wx.navigateTo({
-      url: "/pages/index1/courseIndex/courseIndex"
+      url: "/pages/index1/course/courseIndex/courseIndex"
     })
   },
 

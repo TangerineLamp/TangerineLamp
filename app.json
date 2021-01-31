@@ -1,5 +1,5 @@
 {
-  "pages":[
+  "pages": [
     "pages/index0/index0",
     "pages/index1/index1/index1",
     "pages/index2/index2",
@@ -11,14 +11,15 @@
     "pages/index2/treeHole/6/exam",
     "pages/index2/editPage/personalEditor",
     "pages/index2/detailPage/detailPage",
-    "pages/index3/index3", 
+    "pages/index3/index3",
     "pages/login/login",
-    "pages/index1/adviceIndex/adviceiIndex",
-    "pages/index1/courseIndex/courseIndex",
-    "pages/index1/paidTestDetail/paidTestDetail",
-    "pages/index1/freeTestDetail/freeTestDetail",
-    "pages/index1/wordsIndex/wordsIndex",
-    "pages/index1/wordsDetail/wordsDetail",
+    "pages/index1/advice/adviceIndex/adviceiIndex",
+    "pages/index1/course/courseIndex/courseIndex",
+    "pages/index1/test1/paidTestDetail/paidTestDetail",
+    "pages/index1/test1/freeTestDetail/freeTestDetail",
+    "pages/index1/words/wordsIndex/wordsIndex",
+    "pages/index1/words/wordsDetail/wordsDetail",
+    "pages/index1/course/courseDetail/courseDetail",
     "pages/index3/advice/advice",
     "pages/index3/about/about",
     "pages/index3/share/share",
@@ -28,14 +29,19 @@
     "pages/index3/plan/plan",
     "pages/index3/list/list",
     "pages/index3/exam/exam",
+<<<<<<< HEAD
     "pages/index3/trace/trace",
     "pages/index3/diary/diary"
+=======
+    "pages/index3/diary/diary",
+    "pages/index0/passage/passageContent/passageContent"
+>>>>>>> dev
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#ff9933",
     "navigationBarTitleText": "小桔灯",
-    "navigationBarTextStyle":"white"
+    "navigationBarTextStyle": "white"
   },
   "tabBar": {
     "borderStyle": "black",
@@ -43,29 +49,30 @@
     "selectedColor": "#ff9933",
     "list": [
       {
-      "pagePath": "pages/index0/index0",
-      "text": "每日分享",
-      "iconPath": "icons/planet.png",
-      "selectedIconPath": "icons/planet_active.png"
+        "pagePath": "pages/index0/index0",
+        "text": "每日分享",
+        "iconPath": "icons/planet.png",
+        "selectedIconPath": "icons/planet_active.png"
       },
       {
-      "pagePath": "pages/index1/index1/index1",
-      "text": "心理专攻",
-      "iconPath": "icons/heart.png",
-      "selectedIconPath": "icons/heart_active.png"
+        "pagePath": "pages/index1/index1/index1",
+        "text": "心理专攻",
+        "iconPath": "icons/heart.png",
+        "selectedIconPath": "icons/heart_active.png"
       },
       {
-      "pagePath": "pages/index2/index2",
-      "text": "树洞广场",
-      "iconPath": "icons/comminity.png",
-      "selectedIconPath": "icons/comminity_active.png"
+        "pagePath": "pages/index2/index2",
+        "text": "树洞广场",
+        "iconPath": "icons/comminity.png",
+        "selectedIconPath": "icons/comminity_active.png"
       },
       {
         "pagePath": "pages/index3/index3",
-        "text": "个人中心",   
+        "text": "个人中心",
         "iconPath": "icons/user.png",
         "selectedIconPath": "icons/user_active.png"
-        }]
+      }
+    ]
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json"
