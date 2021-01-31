@@ -29,13 +29,9 @@
     "pages/index3/plan/plan",
     "pages/index3/list/list",
     "pages/index3/exam/exam",
-<<<<<<< HEAD
     "pages/index3/trace/trace",
-    "pages/index3/diary/diary"
-=======
     "pages/index3/diary/diary",
     "pages/index0/passage/passageContent/passageContent"
->>>>>>> dev
   ],
   "window": {
     "backgroundTextStyle": "light",
