@@ -7,5 +7,5 @@
 wx:for="{{words}}"
 wx:key="wordskey"
 url="/pages/index1/words/wordsDetail/wordsDetail?wid={{item.wid}}">
-{{item.name}}
+{{item.title}}
 </navigator>

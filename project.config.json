@@ -66,9 +66,9 @@
           "scene": null
         },
         {
-          "name": "课程详情编译模式",
-          "pathName": "pages/index1/courseDetail/courseDetail",
-          "query": "",
+          "name": "词条详情编译模式",
+          "pathName": "pages/index1/words/wordsDetail/wordsDetail",
+          "query": "wid=0",
           "scene": null
         }
       ]

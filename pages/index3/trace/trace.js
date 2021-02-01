@@ -1,61 +1,18 @@
-// pages/index1/wordsIndex/wordsIndex.js
+// pages/index3/trace/trace.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    words:[]
-  },
 
-  clouddata:{
-    words:[
-      {
-        wid:0,
-        title:"抑郁症"
-      },
-      {
-        wid:1,
-        title:"双相障碍"
-      },
-      {
-        wid:2,
-        title:"恋爱挫折综合征"
-      },
-      {
-        wid:3,
-        title:"学习逃避症"
-      },
-      {
-        wid:4,
-        title:"网络综合症"
-      },
-      {
-        wid:5,
-        title:"考试综合征"
-      }
-    ]
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    wx.showLoading({
-      title: '加载中',
-    })
-    this.getWords();
-    wx.hideLoading();
-  },
 
-    /**
-   * 从云数据库获取数据
-   */
-  getWords() {
-    let words = this.clouddata.words;
-    this.setData({
-      words
-    })
   },
 
   /**
