@@ -1,26 +1,27 @@
 <!--pages/index2/editPage/personalEditor.wxml-->
 
-<view class="container container-fill">
-	<view class="scroll-fullpage" bindtouchstart="scrollTouchstart" bindtouchmove="scrollTouchmove" bindtouchend="scrollTouchend" style="transform:translateY(-{{scrollindex*100}}%);margin-top: {{margintop}}px">
-		<view class="section section01 {{scrollindex==0?'active':''}}" style="background: #3399FF;">
-			<text class="section-maintitle">页面1</text>
-			<text class="section-subtitle">我的页面”1</text>
-		</view>
-		<view class="section section02 {{scrollindex==1?'active':''}}" style="background: #00CC66;">
-			<text class="section-maintitle">页面2</text>
-			<text class="section-subtitle">我的页面”2</text>
-		</view>
-		<view class="section section03 {{scrollindex==2?'active':''}}" style="background: #33CCCC;">
-			<text class="section-maintitle">页面3</text>
-			<text class="section-subtitle">我的页面”3</text>
-		</view>
-		<view class="section section04 {{scrollindex==3?'active':''}}" style="background: #6699FF;">
-			<text class="section-maintitle">页面4</text>
-			<text class="section-subtitle">我的页面”4</text>
-		</view>
-		<view class="section section05 {{scrollindex==4?'active':''}}" style="background: #9966FF;">
-			<text class="section-maintitle">无缝对接双创服5</text>
-			<text class="section-subtitle">我的页面”5</text>
+<view class='topcontainer in_mid'>
+	<text class='case_title in_mid'>写 帖 子</text>
+	<view class="publish_container in_mid">
+		<button class="go_publish in_mid">
+			发表
+		</button>
+	</view>
+</view>
+<view class="midcontainer">
+	<!--用户多行输入的内容-->
+	<textarea class="per_body" 
+						maxlength="-1" 
+						auto-focus="true"
+						placeholder="来说点什么吧~~"
+						bindblur="bindTextAreaBlur"
+						value="{{details}}">
+	</textarea>
+	<!--输入图片-->
+	<view class="bottomcontainer">
+		<view class="piccontainer in_mid">
+			<image src="/pages/index2/logo/pic.svg" class="stdimg" mode="aspectFit"></image>
 		</view>
 	</view>
 </view>
+

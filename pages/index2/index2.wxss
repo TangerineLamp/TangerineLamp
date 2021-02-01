@@ -79,7 +79,7 @@
   background-color: #ff9933;
   border: 0 solid #ffffff;
   box-shadow: 6rpx 1rpx 1rpx #cccccc;
-  position: absolute;
+  position: fixed;
   left: 50%;
   transform: translateX(-50%);
   bottom: 1%;

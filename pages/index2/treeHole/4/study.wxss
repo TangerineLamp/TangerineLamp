@@ -34,7 +34,7 @@
   background-color: #17AD17;
   border: 0 solid #ffffff;
   box-shadow: 6rpx 1rpx 1rpx #cccccc;
-  position: absolute;
+  position: fixed;
   left: 50%;
   transform: translateX(-50%);
   bottom: 1%;
@@ -114,4 +114,5 @@
 .single_agree {
   color: #666666;
   font-size: 20rpx;
+  float: right;
 }
