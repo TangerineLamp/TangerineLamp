@@ -50,7 +50,7 @@
       </navigator>
       <navigator url="/pages/index3/trace/trace">
         <view class="his_num">0</view>
-        <view class="his_name">足迹</view>
+        <view class="his_name">消息</view>
       </navigator>
     </view>
     <view class="orders_wrap">

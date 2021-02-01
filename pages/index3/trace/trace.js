@@ -1,4 +1,3 @@
-// pages/index3/trace/trace.js
 Page({
 
   /**
