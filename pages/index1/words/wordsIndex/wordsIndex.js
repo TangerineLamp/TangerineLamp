@@ -12,27 +12,27 @@ Page({
     words:[
       {
         wid:0,
-        name:"抑郁"
+        title:"抑郁症"
       },
       {
         wid:1,
-        name:"双相障碍"
+        title:"双相障碍"
       },
       {
         wid:2,
-        name:"恋爱挫折综合征"
+        title:"恋爱挫折综合征"
       },
       {
         wid:3,
-        name:"学习逃避症"
+        title:"学习逃避症"
       },
       {
         wid:4,
-        name:"网络综合症"
+        title:"网络综合症"
       },
       {
         wid:5,
-        name:"考试综合征"
+        title:"考试综合征"
       }
     ]
   },
