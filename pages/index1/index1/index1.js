@@ -9,21 +9,21 @@ Page({
   newListPaid:[
     {
       tid:6,
-      title:"66666666",
+      title:"专业触底加载1",
       img:"https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=1622435809,957750092&fm=15&gp=0.jpg",
       type:"能力",
       des:"溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试"
     },
     {
       tid:7,
-      title:"777777777",
+      title:"专业触底加载2",
       img:"https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=395487156,3062274823&fm=26&gp=0.jpg",
       type:"情感",
       des:"测测你是哪种恋爱体质？"
     },
     {
       tid:8,
-      title:"88888888",
+      title:"专业触底加载3",
       img:"https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3840350717,2210481427&fm=26&gp=0.jpg",
       type:"情感",
       des:"从颜色透视你的爱情观"
@@ -33,21 +33,21 @@ Page({
   newListFree:[
     {
       tid:6,
-      title:"免费免费免费",
+      title:"娱乐触底加载1",
       img:"https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=1622435809,957750092&fm=15&gp=0.jpg",
       type:"能力",
       des:"溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试"
     },
     {
       tid:7,
-      title:"免费免费免费",
+      title:"娱乐触底加载2",
       img:"https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=395487156,3062274823&fm=26&gp=0.jpg",
       type:"情感",
       des:"测测你是哪种恋爱体质？"
     },
     {
       tid:8,
-      title:"免费免费免费",
+      title:"娱乐触底加载3",
       img:"https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3840350717,2210481427&fm=26&gp=0.jpg",
       type:"情感",
       des:"从颜色透视你的爱情观"
