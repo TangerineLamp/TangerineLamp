@@ -6,6 +6,54 @@ Page({
     rightTestList:[],
   },
 
+  newListPaid:[
+    {
+      tid:6,
+      title:"66666666",
+      img:"https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=1622435809,957750092&fm=15&gp=0.jpg",
+      type:"能力",
+      des:"溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试"
+    },
+    {
+      tid:7,
+      title:"777777777",
+      img:"https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=395487156,3062274823&fm=26&gp=0.jpg",
+      type:"情感",
+      des:"测测你是哪种恋爱体质？"
+    },
+    {
+      tid:8,
+      title:"88888888",
+      img:"https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3840350717,2210481427&fm=26&gp=0.jpg",
+      type:"情感",
+      des:"从颜色透视你的爱情观"
+    }
+  ],
+
+  newListFree:[
+    {
+      tid:6,
+      title:"免费免费免费",
+      img:"https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=1622435809,957750092&fm=15&gp=0.jpg",
+      type:"能力",
+      des:"溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试"
+    },
+    {
+      tid:7,
+      title:"免费免费免费",
+      img:"https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=395487156,3062274823&fm=26&gp=0.jpg",
+      type:"情感",
+      des:"测测你是哪种恋爱体质？"
+    },
+    {
+      tid:8,
+      title:"免费免费免费",
+      img:"https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3840350717,2210481427&fm=26&gp=0.jpg",
+      type:"情感",
+      des:"从颜色透视你的爱情观"
+    }
+  ],
+
   //从云端获取的数据
   Cates:{
     testList:[
@@ -51,9 +99,58 @@ Page({
           img:"https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3840350717,2210481427&fm=26&gp=0.jpg",
           type:"情感",
           des:"从颜色透视你的爱情观"
+        },
+        {
+          tid:3,
+          title:"大脑优势评估",
+          img:"https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=1622435809,957750092&fm=15&gp=0.jpg",
+          type:"能力",
+          des:"溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试溢出测试"
+        },
+        {
+          tid:4,
+          title:"恋爱体质测试",
+          img:"https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=395487156,3062274823&fm=26&gp=0.jpg",
+          type:"情感",
+          des:"测测你是哪种恋爱体质？"
+        },
+        {
+          tid:5,
+          title:"爱情底色测试",
+          img:"https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3840350717,2210481427&fm=26&gp=0.jpg",
+          type:"情感",
+          des:"从颜色透视你的爱情观"
         }
       ],
       [
+        {
+          tid:500,
+          title:"假面人格测试",
+          img:"https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=4112329300,1871547202&fm=26&gp=0.jpg",
+          type:"人际",
+          des:"测测你隐藏了哪些人格？"
+        },
+        {
+          tid:501,
+          title:"原生家庭边界评估",
+          img:"https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1060753041,4225328984&fm=26&gp=0.jpg",
+          type:"亲子",
+          des:"父母缺乏边界感，该怎么办？"
+        },
+        {
+          tid:500,
+          title:"假面人格测试",
+          img:"https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=4112329300,1871547202&fm=26&gp=0.jpg",
+          type:"人际",
+          des:"测测你隐藏了哪些人格？"
+        },
+        {
+          tid:501,
+          title:"原生家庭边界评估",
+          img:"https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1060753041,4225328984&fm=26&gp=0.jpg",
+          type:"亲子",
+          des:"父母缺乏边界感，该怎么办？"
+        },
         {
           tid:500,
           title:"假面人格测试",
@@ -74,34 +171,6 @@ Page({
 
   //首次加载页面时，调用onload
   onLoad: function(options){
-    // const Cates = wx.getStorageSync("cates");
-    // // 缓存技术
-    // if(!Cates){
-    //   //不存在缓存，发送请求获取数据
-    //   wx.showLoading({
-    //     title: '加载中',
-    //   })
-    //   this.getCates();
-    //   wx.hideLoading();
-    // }else{
-    //   wx.showLoading({
-    //     title: '加载中',
-    //   })
-    //   //数据过期，时间1min
-    //   if(Date.now()-Cates.time>1000*60){
-    //     this.getCates();
-    //   }else{
-    //     //可以使用旧数据
-    //     this.Cates = Cates.data;
-    //     let rightTestList = this.Cates.testList[0];
-    //     this.setData({
-    //       rightTestList
-    //     })
-    //   }
-    //   wx.hideLoading();
-    // }
-
-    //无缓存版本，如需使用缓存则换为上面的版本
     wx.showLoading({
       title: '加载中',
     })
@@ -111,25 +180,26 @@ Page({
 
   //接口返回的数据
   getCates(){
-    // request({
-    //   url:""
-    // })
-    //   .then(res=>{
-    //     this.Cates=res.data.message;
-    //     //把接口数据存入本地存储,如不需要缓存则删除下一行
-    //     wx.setStorageSync("cates", {time:Date.now(),data:this.Cates});
-    //     //右列表数据构造
-    //     let rightTestList = this.Cates.testList[0];
-    //     this.setData({
-    //       rightTestList
-    //     })
-    //   })
-    
-    //引入云开发后请删除以下全部↓↓↓↓↓
-    //wx.setStorageSync("cates", {time:Date.now(),data:this.Cates});
     let right = this.Cates.testList[0];
     this.setData({
       rightTestList:right
+    })
+  },
+
+  /**
+   * 页面上拉触底事件的处理函数
+   */
+  bottomRefresh: function () {
+    let oldData = this.data.rightTestList;
+    let newList = [];
+    if(this.data.currentIndex==0){
+      newList = this.newListPaid;
+    }else{
+      newList = this.newListFree;
+    }
+    let newData = oldData.concat(newList);
+    this.setData({
+      rightTestList:newData
     })
   },
   
